@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import userRoutes from './users.routes.js';
 const app = express()
-app.use(cors(
-  origin ="https://ramadhan-project-front.vercel.app"
+app.use(cors({
+  origin : "https://ramadhan-project-front.vercel.app"}
 ));
 app.use(express.json());
 
